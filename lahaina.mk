@@ -236,10 +236,6 @@ KERNEL_MODULES_OUT := $(OUT_DIR)/target/product/odin/$(KERNEL_MODULES_INSTALL)/l
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
-
 # Media
 PRODUCT_PACKAGES += \
     libOmxAacEnc \

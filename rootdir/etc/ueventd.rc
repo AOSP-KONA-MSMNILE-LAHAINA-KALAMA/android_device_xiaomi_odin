@@ -141,8 +141,5 @@ firmware_directories /vendor/firmware_mnt/image/
 # Battery
 /sys/class/qcom-battery     reverse_chg_mode            0644    system  system
 
-# Charger
-/sys/class/qcom-battery     input_suspend               0660    system  system
-
 # Display
 /sys/devices/virtual/mi_display/disp_feature/disp-DSI-0 disp_param  0666  system  system
