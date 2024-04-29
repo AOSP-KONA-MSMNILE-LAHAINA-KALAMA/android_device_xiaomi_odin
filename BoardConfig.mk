@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/xiaomi/star
+DEVICE_PATH := device/xiaomi/odin
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
@@ -55,7 +55,7 @@ AUDIO_FEATURE_ENABLED_GKI := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := star
+TARGET_BOOTLOADER_BOARD_NAME := odin
 TARGET_NO_BOOTLOADER := true
 
 # Camera
@@ -86,11 +86,7 @@ DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/configs/vintf/manifest.xml
 
 # Include proprietary files
--include vendor/xiaomi/star/BoardConfigVendor.mk
-
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_star
-TARGET_RECOVERY_DEVICE_MODULES := libinit_star
+-include vendor/xiaomi/odin/BoardConfigVendor.mk
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -195,7 +191,7 @@ TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 TARGET_USES_NQ_NFC := true
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := star|mars
+TARGET_OTA_ASSERT_DEVICE := odin
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -305,7 +301,7 @@ CONFIG_IEEE80211AX := true
 CONFIG_IEEE80211AC := true
 
 # Inherit proprietary blobs
-include vendor/xiaomi/star/BoardConfigVendor.mk
+include vendor/xiaomi/odin/BoardConfigVendor.mk
 
 # Inherit from proprietary files for miuicamera
--include vendor/xiaomi/star-miuicamera/products/board.mk
+-include vendor/xiaomi/odin-miuicamera/products/board.mk

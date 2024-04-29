@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "SystemUIResStar",
+    name: "SystemUIResOdin",
     device_specific: true,
 }

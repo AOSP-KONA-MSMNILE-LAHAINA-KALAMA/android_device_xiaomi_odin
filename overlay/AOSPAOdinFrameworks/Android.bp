@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "AOSPAStarFrameworks",
+    name: "AOSPAOdinFrameworks",
     device_specific: true,
 }

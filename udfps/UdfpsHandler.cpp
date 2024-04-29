@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "UdfpsHandler.star"
+#define LOG_TAG "UdfpsHandler.odin"
 
 #include <android-base/logging.h>
 #include <fcntl.h>

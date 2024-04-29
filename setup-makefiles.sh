@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=star
+DEVICE=odin
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks

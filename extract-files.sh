@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=star
+DEVICE=odin
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
@@ -65,7 +65,7 @@ function blob_fixup() {
         vendor/etc/camera/pureShot_parameter.xml)
             sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
             ;;
-        vendor/etc/camera/star_motiontuning.xml|vendor/etc/camera/mars_motiontuning.xml)
+        vendor/etc/camera/odin_motiontuning.xml)
             sed -i 's/xml=version/xml\ version/g' "${2}"
 	    ;;
         vendor/lib64/vendor.xiaomi.hardware.cameraperf@1.0-impl.so)

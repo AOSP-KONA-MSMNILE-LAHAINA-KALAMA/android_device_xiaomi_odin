@@ -27,7 +27,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Inherit proprietary targets
-$(call inherit-product, vendor/xiaomi/star/star-vendor.mk)
+$(call inherit-product, vendor/xiaomi/odin/odin-vendor.mk)
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
@@ -230,7 +230,7 @@ PRODUCT_COPY_FILES += \
 
 # Kernel
 KERNEL_MODULES_INSTALL := dlkm
-KERNEL_MODULES_OUT := $(OUT_DIR)/target/product/star/$(KERNEL_MODULES_INSTALL)/lib/modules
+KERNEL_MODULES_OUT := $(OUT_DIR)/target/product/odin/$(KERNEL_MODULES_INSTALL)/lib/modules
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -275,12 +275,12 @@ PRODUCT_PACKAGES += \
     WifiResCommon
 
 PRODUCT_PACKAGES += \
-    AOSPAStarFrameworks \
-    FrameworksResStar \
-    AOSPAStarSystemUI \
-    SettingsProviderOverlayStar \
-    SettingsResStar \
-    SystemUIResStar
+    AOSPAOdinFrameworks \
+    FrameworksResOdin \
+    AOSPAOdinSystemUI \
+    SettingsProviderOverlayOdin \
+    SettingsResOdin \
+    SystemUIResOdin
 
 # Platform
 TARGET_BOARD_PLATFORM := lahaina

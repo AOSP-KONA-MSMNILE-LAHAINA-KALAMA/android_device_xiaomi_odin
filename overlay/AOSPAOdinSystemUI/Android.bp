@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "AOSPAStarSystemUI",
+    name: "AOSPAOdinSystemUI",
     device_specific: true,
 }
