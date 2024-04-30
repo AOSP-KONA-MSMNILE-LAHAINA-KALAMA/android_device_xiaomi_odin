@@ -21,23 +21,11 @@
      for different hardware and product builds. -->
 <resources>
 
-    <!-- Default rounded corner curve (a Bezier). Must match (the curved path in) rounded.xml.
-         Note that while rounded.xml includes the entire path (including the horizontal and vertical
-         corner edges), this pulls out just the curve.
-     -->
-    <string name="config_rounded_mask" translatable="false">
-        M0,0H194S123.711,-1.438 85,24C69.437,34.227 47.5,44.815 22,87 -2.227,127.084 0,194 0,194
-    </string>
-
-    <!-- Respect drawable/rounded.xml intrinsic size for multiple radius corner path customization -->
-    <bool name="config_roundedCornerMultipleRadius">true</bool>
-
-    <!-- The radius of the enrollment progress bar, in dp -->
-    <integer name="config_udfpsEnrollProgressBar" translatable="false">142</integer>
-
     <!-- Location on the screen of the center of the physical power button. -->
-    <dimen name="physical_power_button_center_screen_location_y">1380px</dimen>
+    <dimen name="physical_power_button_center_screen_location_y">1010px</dimen>
 
-    <!-- Location on the screen of the center of the fingerprint sensor. -->
-    <dimen name="physical_fingerprint_sensor_center_screen_location_y">2490px</dimen>
+    <!-- Location on the screen of the center of the physical volume up/down buttons. -->
+    <dimen name="physical_volume_up_button_center_screen_location_y">550px</dimen>
+    <dimen name="physical_volume_down_button_center_screen_location_y">720px</dimen>
+
 </resources>

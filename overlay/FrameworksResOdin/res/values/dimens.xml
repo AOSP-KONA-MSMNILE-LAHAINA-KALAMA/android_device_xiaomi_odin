@@ -16,19 +16,14 @@
 <resources>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_default">30dp</dimen>
-    <dimen name="status_bar_height_portrait">40dp</dimen>
-    <dimen name="status_bar_height_landscape">40dp</dimen>
+    <dimen name="status_bar_height_default">96px</dimen>
+    <dimen name="status_bar_height_portrait">96px</dimen>
+    <dimen name="status_bar_height_landscape">96px</dimen>
 
     <!-- Default radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">194px</dimen>
+    <dimen name="rounded_corner_radius">80px</dimen>
 
-    <!-- Radius of the software rounded corners at the top of the display in its natural
-        orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_top">243px</dimen>
-
-    <!-- Radius of the software rounded corners at the bottom of the display in its natural
-        orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_bottom">194px</dimen>
+    <!-- Adjustment for software rounded corners since corners aren't perfectly round. -->
+    <dimen name="rounded_corner_radius_adjustment">5px</dimen>
 
 </resources>
